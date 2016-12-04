@@ -82,7 +82,13 @@ public class CalculatorTest {
 
 		actual = calculator.calc("//[;]\n1;2;5;-8");
 	}
-	
+	@Test
+	public void Ignore_Numbers_Greater_Then_1000() throws NegativesNotAllowedException {
+		
+		expected = 16;
+		actual = calculator.calc("//[;]\n2;2000");
+		assertThat("Diffrent separators does not work",actual, is(equalTo(expected)));
+	}
 	
 
 }

@@ -11,8 +11,6 @@ import javax.xml.parsers.DocumentBuilder;
 
 public class Calculator {
 	
-
-
 	public double calc(String input) throws NegativesNotAllowedException{
 
 		double result = 0;
