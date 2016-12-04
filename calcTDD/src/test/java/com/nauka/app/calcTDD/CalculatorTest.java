@@ -87,7 +87,7 @@ public class CalculatorTest {
 		
 		expected = 16;
 		actual = calculator.calc("//[;]\n2;2000");
-		assertThat("Diffrent separators does not work",actual, is(equalTo(expected)));
+		assertThat("Numbers over 2000 does not work!",actual, is(equalTo(expected)));
 	}
 	
 
