@@ -86,6 +86,7 @@ public class CalculatorTest {
 	public void Ignore_Numbers_Greater_Then_1000() throws NegativesNotAllowedException {
 		
 		expected = 16;
+		//pasuje
 		actual = calculator.calc("//[;]\n2;2000;3000;9000");
 		assertThat("Numbers over 2000 does not work!",actual, is(equalTo(expected)));
 	}
