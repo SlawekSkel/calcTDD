@@ -87,7 +87,7 @@ public class CalculatorTest {
 		
 		expected = 16;
 		//pasuje
-		actual = calculator.calc("//[;]\n2;2000;3000;9000");
+		actual = calculator.calc("//[;]\n2;2000;3000;9000;90");
 		assertThat("Numbers over 2000 does not work!",actual, is(equalTo(expected)));
 	}
 	
